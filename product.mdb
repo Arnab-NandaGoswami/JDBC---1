@@ -1,0 +1,30 @@
+-- Create Table
+CREATE TABLE product (
+    id INTEGER,
+    name VARCHAR(255),
+    price INTEGER
+);
+
+-- Insert Data to Table
+INSERT INTO product (id, name, price) VALUES (101, 'Pen', 50);
+INSERT INTO product (id, name, price) VALUES (102, 'Key board', 500);
+INSERT INTO product (id, name, price) VALUES (103, 'Mouse', 500);
+INSERT INTO product (id, name, price) VALUES (104, 'Pen Drive', 400);
+INSERT INTO product (id, name, price) VALUES (105, 'USB Cable', 200);
+
+-- Show Data From Table
+SELECT * FROM  product;
+
+-- Update Values
+UPDATE product SET price = 100 WHERE id = 101;
+UPDATE product SET name = 'Wireless Mouse', price = 500 WHERE id = 103;
+
+-- Show Data From Table after Updation
+SELECT * FROM  product;
+
+-- Delet row 104 and 105 from Record
+DELETE FROM product WHERE id = 104;
+DELETE FROM product WHERE id = 105;
+
+-- Show Data From Table after Deletion
+SELECT * FROM  product;
